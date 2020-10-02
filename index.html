@@ -2,14 +2,20 @@
 <html>
   <head>
     <title>Minesweeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Slab:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="minesweeper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Slab:wght@200;300;400;500&display=swap" rel="stylesheet">
     <script src="lib/tests.js"></script>
     <script src="lib/lib.js"></script>
     <script src="minesweeper.js"></script>
   </head>
   <body>
+    <h1>Minesweeper</h1>
     <div id="message"></div>
-    <div id="notes"></div>
     <div class="board"></div>
+    <div id="notes">* The goal is to mark all the mines without setting any off.</div>
+    <div>
+      <button class="reset" onclick="location.reload('.board')"><span>Try again ››</span></button>
+    </div>
   </body>
 </html>
